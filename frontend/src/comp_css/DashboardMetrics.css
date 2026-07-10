@@ -1,0 +1,59 @@
+/* Dashboard Metrics Styles */
+.dashboard__metrics-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  @media (min-width: 640px) {
+    .dashboard__metrics-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .dashboard__metrics-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .dashboard__metric-item {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard__metric-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dashboard__metric-label {
+    color: #6b7280; /* Gray */
+    font-size: 0.875rem; /* Smaller text for the label */
+  }
+  
+  .dashboard__metric-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .dashboard__metric-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+  
+  .text-green-500 {
+    color: #10b981;
+  }
+  
+  .text-red-500 {
+    color: #ef4444;
+  }
+  
+  .text-purple-500 {
+    color: #8b5cf6;
+  }
